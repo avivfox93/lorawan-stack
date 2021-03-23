@@ -152,6 +152,12 @@ class Header extends Component {
             path="/user/api-keys"
           />
         )}
+        <Dropdown.Item
+          title={sharedMessages.profileSettings}
+          icon="user"
+          path="/oauth/profile-settings"
+          external
+        />
         <Dropdown.Item title={sharedMessages.logout} icon="logout" action={handleLogout} />
       </React.Fragment>
     )

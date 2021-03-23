@@ -18,6 +18,7 @@ For details about compatibility between different releases, see the **Commitment
 - Searching for users and OAuth clients by state.
 - Gateway Server forwards Tx Acknowlegdment packets to the Network Server for scheduled downlinks. These can be used by the Network Server to forward `downlink_ack` upstream messages to the Application Server.
 - UDP connection error caching. The duration can be configured via the `gs.udp.connection-error-expires` configuration entry.
+- Profile settings link to header dropdown menu.
 
 ### Changed
 
