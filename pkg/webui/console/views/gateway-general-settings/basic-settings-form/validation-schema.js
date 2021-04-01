@@ -39,6 +39,9 @@ const validationSchema = Yup.object().shape({
     Yup.passValues(sharedMessages.validateAddressFormat),
   ),
   require_authenticated_connection: Yup.boolean().default(false),
+  lbs_lns_secret: Yup.object().shape({
+    value: Yup.string().max(1350, Yup.passValues(sharedMessages.validateTooLong)),
+  }),
   location_public: Yup.boolean().default(false),
   status_public: Yup.boolean().default(false),
   update_location_from_status: Yup.boolean().default(false),
